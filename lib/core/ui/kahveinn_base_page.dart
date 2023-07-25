@@ -32,7 +32,7 @@ class _KahveinnAppBar extends StatelessWidget {
     return SizedBox(
       height: kToolbarHeight,
       child: ColoredBox(
-        color: Colors.brown,
+        color: Colors.red,
         child: MouseRegion(
           cursor: SystemMouseCursors.click,
           child: GestureDetector(
@@ -93,8 +93,10 @@ class _ClickableBottomBarContent extends StatelessWidget {
       textAlign: TextAlign.center,
       text: TextSpan(
         text: 'Source of the content here is ',
-        style:
-            Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.white),
+        style: Theme.of(context)
+            .textTheme
+            .bodySmall
+            ?.copyWith(color: Colors.white),
         children: [
           TextSpan(
             text: 'Taste of Home.',
